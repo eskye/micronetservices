@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  learn.microservices.moviestore:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+
+  learn.microservices.moviestore.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
+

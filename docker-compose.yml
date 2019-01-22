@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  learn.microservices.moviestore:
+    image: ${DOCKER_REGISTRY-}learnmicroservicesmoviestore
+    build:
+      context: .
+      dockerfile: Learn.MicroServices.MovieStore/Dockerfile
+
+  learn.microservices.moviestore.api:
+    image: ${DOCKER_REGISTRY-}learnmicroservicesmoviestoreapi
+    build:
+      context: .
+      dockerfile: Learn.MicroServices.MovieStore.API/Dockerfile
+
